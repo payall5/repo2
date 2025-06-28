@@ -82,6 +82,7 @@ document.querySelector('.content').addEventListener("click",function(){
     localStorage.removeItem("yourChoice");
     document.querySelector('#your-score').innerText=yourChoiceNo;
     document.querySelector('#comp-score').innerText=compChoiceNo;
+    document.querySelector(.wins).innerText=`Undefined choices`;
 })
 function setLocalStorage(){
     localStorage.setItem("compChoice",JSON.stringify(compChoiceNo));
